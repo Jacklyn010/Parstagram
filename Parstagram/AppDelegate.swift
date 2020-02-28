@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  Parstagram
 //
-//  Created by mac air on 2020/2/27.
+//  Created by mac air on 2020/2/26.
 //  Copyright © 2020 mac air. All rights reserved.
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.initialize(
+        with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+            configuration.applicationId = "Parstagram"
+            configuration.server = "http://peaceful-hamlet-27224.herokuapp.com/parse"
+        }))
+        
         return true
     }
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -34,4 +43,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 
