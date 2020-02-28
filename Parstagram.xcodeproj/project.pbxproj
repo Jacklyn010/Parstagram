@@ -21,6 +21,8 @@
 		A60B3221240908FC006C9E6B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B3220240908FC006C9E6B /* FeedViewController.swift */; };
 		A60B322324090B7B006C9E6B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B322224090B7B006C9E6B /* CameraViewController.swift */; };
 		A60B322524090BBD006C9E6B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B322424090BBD006C9E6B /* PostCell.swift */; };
+		A60B322924091E92006C9E6B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B322824091E92006C9E6B /* CommentCell.swift */; };
+		A60B322B2409260C006C9E6B /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B322A2409260C006C9E6B /* AddCommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		A60B3220240908FC006C9E6B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A60B322224090B7B006C9E6B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A60B322424090BBD006C9E6B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		A60B322824091E92006C9E6B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		A60B322A2409260C006C9E6B /* AddCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentCell.swift; sourceTree = "<group>"; };
 		AEF53B3AC55AC01778B4C88B /* Pods-ParstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParstagramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParstagramUITests/Pods-ParstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5FE9660F4DA5EEB2E69D1A0 /* Pods_Parstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,8 +154,10 @@
 				A60B322224090B7B006C9E6B /* CameraViewController.swift */,
 				A60B31E02408FCED006C9E6B /* AppDelegate.swift */,
 				A60B31E22408FCED006C9E6B /* SceneDelegate.swift */,
+				A60B322A2409260C006C9E6B /* AddCommentCell.swift */,
 				A60B31E62408FCED006C9E6B /* Main.storyboard */,
 				A60B322424090BBD006C9E6B /* PostCell.swift */,
+				A60B322824091E92006C9E6B /* CommentCell.swift */,
 				A60B31E92408FCEF006C9E6B /* Assets.xcassets */,
 				A60B31EB2408FCEF006C9E6B /* LaunchScreen.storyboard */,
 				A60B31EE2408FCEF006C9E6B /* Info.plist */,
@@ -336,6 +342,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -343,6 +350,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,9 +404,11 @@
 				A60B322524090BBD006C9E6B /* PostCell.swift in Sources */,
 				A60B321F240907A7006C9E6B /* LoginViewController.swift in Sources */,
 				A60B3221240908FC006C9E6B /* FeedViewController.swift in Sources */,
+				A60B322B2409260C006C9E6B /* AddCommentCell.swift in Sources */,
 				A60B31E12408FCED006C9E6B /* AppDelegate.swift in Sources */,
 				A60B31E32408FCED006C9E6B /* SceneDelegate.swift in Sources */,
 				A60B322324090B7B006C9E6B /* CameraViewController.swift in Sources */,
+				A60B322924091E92006C9E6B /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
